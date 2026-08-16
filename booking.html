@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip - Kashish Travels</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div id="booking">
+        <!-- Navigation -->
+        <nav>
+            <div id="logo">
+                <h2>Kashish Travels</h2>
+            </div>
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="packages.html">Packages</a>
+                <a href="booking.html">Booking</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+        </nav>
+        <!-- Booking Header -->
+        <div id="booking-header">
+            <h3>PLAN YOUR PERFECT GETAWAY</h3>
+            <h1>Book Your Dream Vacation</h1>
+            <p>
+                Fill out the form below and let us help you plan
+                the trip of your dreams!
+            </p>
+        </div>
+        <!-- Booking Form -->
+        <div id="booking-form">
+            <form action="">
+                <!-- Personal Information -->
+                <section id="personal-form">
+                    <h3>Personal Information</h3>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            required
+                        >
+                    </div>
+                </section>
+                <!-- Travel Details -->
+                <section id="travel-form">
+                    <h3>Travel Details</h3>
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <select id="destination" name="destination" required>
+                            <option value="">Select Destination</option>
+                            <option value="manali">Manali</option>
+                            <option value="jaisalmer">Jaisalmer</option>
+                            <option value="goa">Goa</option>
+                            <option value="paris">Paris</option>
+                            <option value="kyoto">Kyoto</option>
+                            <option value="rishikesh">Rishikesh</option>
+                            <option value="kashmir">Kashmir</option>
+                            <option value="kerala">Kerala</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="package">Package</label>
+
+                        <select id="package" name="package" required>
+                            <option value="">Select Package</option>
+                            <option value="himalayan-escape">Himalayan Escape</option>
+                            <option value="desert-adventure">Desert Adventure</option>
+                            <option value="beach-paradise">Beach Paradise</option>
+                            <option value="city-of-lights">City of Lights</option>
+                            <option value="kyoto-cultural-tour">Kyoto Cultural Tour</option>
+                            <option value="spiritual-energy">Spiritual Energy</option>
+                            <option value="snowy-retreat">Snowy Retreat</option>
+                            <option value="into-the-kerala">Into The Kerala</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="departure">Departure Date</label>
+                        <input
+                            type="date"
+                            id="departure"
+                            name="departure"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="return">Return Date</label>
+                        <input
+                            type="date"
+                            id="return"
+                            name="return"
+                            required
+                        >
+                    </div>
+                </section>
+                <!-- Number of Travellers -->
+                <section id="no-of-travellers">
+                    <h3>Travellers</h3>
+                    <div class="form-group">
+                        <label for="adults">Adults</label>
+                        <input
+                            type="number"
+                            id="adults"
+                            name="adults"
+                            min="1"
+                            value="1"
+                            required
+                        >
+                    </div>
+                    <div class="form-group">
+                        <label for="children">Children</label>
+                        <input
+                            type="number"
+                            id="children"
+                            name="children"
+                            min="0"
+                            value="0"
+                        >
+                    </div>
+                </section>
+
+                <!-- Travel Preferences -->
+                <section id="Travel-prefrences">
+                    <h3>Travel Preferences</h3>
+                    <div id="preference-options">
+                        <div>
+                            <input
+                                type="radio"
+                                id="economy"
+                                name="travel-class"
+                                value="economy"
+                                required
+                            >
+                            <label for="economy">Economy</label>
+                        </div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="standard"
+                                name="travel-class"
+                                value="standard"
+                            >
+                            <label for="standard">Standard</label>
+                        </div>
+                        <div>
+                            <input
+                                type="radio"
+                                id="luxury"
+                                name="travel-class"
+                                value="luxury">
+                            <label for="luxury">Luxury</label>
+                        </div>
+                    </div>
+                </section>
+                <!-- Special Requests -->
+                <section id="special-requests">
+                    <h3>Special Requests</h3>
+                    <div class="form-group">
+                        <label for="requests">
+                            Additional Requirements
+                        </label>
+                        <textarea
+                            id="requests"
+                            name="requests"
+                            rows="6"
+                            placeholder="Tell us about any special requirements..."
+                        ></textarea>
+                    </div>
+                </section>
+                <!-- Submit -->
+                <section id="submit-form">
+                    <button type="submit">
+                        Book My Trip
+                    </button>
+                </section>
+            </form>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div id="footer-info">
+                <h3>Kashish Travels</h3>
+                <p>
+                    Making your travel dreams come true since 2010.
+                </p>
+            </div>
+            <div id="quick-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="packages.html">Packages</a>
+                <a href="booking.html">Booking</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+            <div id="social-links">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div id="copyright">
+                <p>
+                    &copy; 2026 Kashish Travels. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

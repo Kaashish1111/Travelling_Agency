@@ -1,0 +1,318 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: whitesmoke;
+}
+#nav-links{
+    display: flex;
+    gap: 20px;
+}
+#nav-links a{
+    text-decoration: none;
+    color: #667575;
+    transition: 0.3s;
+}
+#nav-links a:hover{
+    text-decoration: underline;
+    color: #0B5D56;
+    text-shadow: 0 0 8px #0B5D56;
+}
+#logo h2{
+    font-size: 28px;
+    font-weight: bold;
+    color: #0F766E;
+}
+#package-intro {
+    text-align: center;
+    padding: 70px 20px 50px;
+}
+#package-intro h1 {
+    font-size: 48px;
+    color: #0F766E;
+    margin-bottom: 12px;
+}
+#package-intro h3 {
+    font-size: 22px;
+    color: #52706B;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+#package-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #667575;
+    font-size: 17px;
+    line-height: 1.6;
+}
+#package-list {
+    padding: 20px 80px 80px;
+    overflow-x: auto;
+}
+#package-list table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+#package-list th {
+    background-color: #0F766E;
+    color: white;
+    padding: 16px;
+    text-align: left;
+}
+#package-list td {
+    padding: 16px;
+    border-bottom: 1px solid #DFF5F1;
+    color: #52706B;
+}
+#package-list tr {
+    transition: 0.3s;
+}
+#package-list tbody tr:hover {
+    background-color: #F3FAF8;
+}
+#package-list a {
+    display: inline-block;
+    background-color: #0F766E;
+    color: white;
+    padding: 9px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+#package-list a:hover {
+    background-color: #0B5D56;
+}
+#Why-Choose-Us {
+    text-align: center;
+    padding: 70px 20px;
+}
+#Why-Choose-Us h2 {
+    font-size: 38px;
+    color: #0F766E;
+    margin-bottom: 35px;
+}
+#Why-Choose-Us p {
+    width:70%;
+    margin: 0 auto 25px;
+    color: #667575;
+    line-height: 2.6;
+}
+#Why-Choose-Us ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto 35px;
+}
+#Why-Choose-Us li {
+    background-color: #FFFFFF;
+    color: #52706B;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+    font-weight: 500;
+    transition: 0.3s;
+}
+#Why-Choose-Us li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+#Why-Choose-Us > a {
+    display: inline-block;
+    background-color: #0F766E;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+#Why-Choose-Us > a:hover {
+    background-color: #0B5D56;
+}
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    background-color: #0B5D56;
+    color: white;
+    padding: 60px 80px 20px;
+    margin-top: 10px;
+}
+footer h3 {
+    margin-bottom: 15px;
+}
+#quick-links,
+#social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #A7DCD5;
+    text-shadow: 0 0 8px #A7DCD5;
+}
+#copyright {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 15px;
+    }
+
+    #nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    /* Package Header */
+    #package-intro {
+        padding: 50px 20px 40px;
+    }
+
+    #package-intro h1 {
+        font-size: 36px;
+    }
+
+    #package-intro h3 {
+        font-size: 18px;
+    }
+
+    #package-intro p {
+        font-size: 15px;
+    }
+
+    /* Package Table */
+    #package-list {
+        width: 400px;
+        max-width: 100%;
+        padding: 20px 8px;
+        overflow: hidden;
+    }
+
+    #package-list table {
+        width: 100%;
+        min-width: 0;
+        table-layout: fixed;
+    }
+
+    #package-list th,
+    #package-list td {
+        padding: 7px 3px;
+        font-size: 10px;
+        word-break: break-word;
+        text-align: center;
+    }
+
+    /* Column widths */
+    #package-list th:nth-child(1),
+    #package-list td:nth-child(1) {
+        width: 20%;
+    }
+
+    #package-list th:nth-child(2),
+    #package-list td:nth-child(2) {
+        width: 13%;
+    }
+
+    #package-list th:nth-child(3),
+    #package-list td:nth-child(3) {
+        width: 17%;
+    }
+
+    #package-list th:nth-child(4),
+    #package-list td:nth-child(4) {
+        width: 14%;
+    }
+
+    #package-list th:nth-child(5),
+    #package-list td:nth-child(5) {
+        width: 22%;
+    }
+
+    #package-list th:nth-child(6),
+    #package-list td:nth-child(6) {
+        width: 16%;
+    }
+
+    /* Book Now */
+    #package-list a {
+        display: inline-block;
+        padding: 5px 4px;
+        font-size: 9px;
+        white-space: nowrap;
+    }
+
+    /* Why Choose Us */
+    #Why-Choose-Us {
+        padding: 50px 20px;
+    }
+
+    #Why-Choose-Us ul {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    #Why-Choose-Us p {
+        width: 100%;
+    }
+    #Why-Choose-Us > a {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #0F766E;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+#Why-Choose-Us > a:hover {
+    background-color: #0B5D56;
+}
+    /* Footer */
+    footer {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 40px 20px 20px;
+        text-align: center;
+    }
+
+    #quick-links,
+    #social-links {
+        align-items: center;
+    }
+    #copyright {
+        padding-top: 20px;
+    }
+}

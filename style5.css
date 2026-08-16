@@ -1,0 +1,493 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: whitesmoke;
+}
+
+#logo h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0F766E;
+}
+
+#nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: #667575;
+    transition: 0.3s;
+}
+
+#nav-links a:hover {
+    text-decoration: underline;
+    color: #0B5D56;
+    text-shadow: 0 0 8px #0B5D56;
+}
+
+
+/* =========================
+   ABOUT HEADER
+========================= */
+
+#about-header {
+    text-align: center;
+    padding: 70px 20px 50px;
+}
+
+#about-header h3 {
+    color: #0F766E;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+#about-header h1 {
+    font-size: 48px;
+    color: #0F766E;
+    margin-bottom: 15px;
+}
+
+#about-header p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #667575;
+}
+
+
+/* =========================
+   ABOUT US SECTION
+========================= */
+
+#about-us {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto 80px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#about-us > img {
+    width: 45%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+#about-us .content {
+    width: 55%;
+}
+
+#about-us .content h3 {
+    font-size: 34px;
+    color: #0F766E;
+    margin-bottom: 20px;
+}
+
+#about-us .content > p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #667575;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   HIGHLIGHTS
+========================= */
+
+#highlights {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+#highlights p {
+    background-color: #F3FAF8;
+    padding: 14px;
+    border-radius: 10px;
+    color: #52706B;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+#highlights p:hover {
+    background-color: #DFF5F1;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   WHY WE TRAVEL
+========================= */
+
+#why-we-travel {
+    background-color: #DFF5F1;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+#why-we-travel h2 {
+    font-size: 40px;
+    color: #0F766E;
+    margin-bottom: 20px;
+}
+
+#why-we-travel p {
+    max-width: 850px;
+    margin: 0 auto 15px;
+    color: #52706B;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+#contact-us {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#contact-us h1 {
+    font-size: 42px;
+    color: #0F766E;
+    margin-bottom: 15px;
+}
+
+#contact-us > p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #667575;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+
+/* =========================
+   CONTACT CARDS
+========================= */
+
+/*
+   Your HTML has the cards directly
+   inside #contact-us, so we style
+   them individually.
+*/
+
+#emailCard,
+#phoneCard,
+#officeCard,
+#hoursCard {
+    display: inline-block;
+    vertical-align: top;
+    width: 23%;
+    margin: 1%;
+    min-height: 150px;
+    padding: 25px 18px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+#emailCard:hover,
+#phoneCard:hover,
+#officeCard:hover,
+#hoursCard:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+#emailCard h3,
+#phoneCard h3,
+#officeCard h3,
+#hoursCard h3 {
+    color: #0F766E;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+#emailCard p,
+#phoneCard p,
+#officeCard p,
+#hoursCard p {
+    color: #667575;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   SOCIAL MEDIA
+========================= */
+
+#about-social-links {
+    margin-top: 50px;
+}
+
+#about-social-links h2 {
+    color: #0F766E;
+    margin-bottom: 20px;
+}
+
+#about-social-links a {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 10px 18px;
+    background-color: #DFF5F1;
+    color: #0F766E;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#about-social-links a:hover {
+    background-color: #0F766E;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    background-color: #0B5D56;
+    color: white;
+    padding: 60px 80px 20px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+
+#quick-links,
+#social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #A7DCD5;
+    text-shadow: 0 0 8px #A7DCD5;
+}
+
+#copyright {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 15px;
+    }
+
+    #nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    #nav-links a {
+        font-size: 15px;
+    }
+
+
+    /* About Header */
+
+    #about-header {
+        padding: 50px 20px 40px;
+    }
+
+    #about-header h3 {
+        font-size: 15px;
+    }
+
+    #about-header h1 {
+        font-size: 36px;
+    }
+
+    #about-header p {
+        font-size: 15px;
+    }
+
+
+    /* About Us */
+
+    #about-us {
+        width: 92%;
+        margin: 0 auto 50px;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    #about-us > img {
+        width: 100%;
+        height: 320px;
+    }
+
+    #about-us .content {
+        width: 100%;
+    }
+
+    #about-us .content h3 {
+        font-size: 28px;
+    }
+
+    #about-us .content > p {
+        font-size: 15px;
+    }
+
+
+    /* Highlights */
+
+    #highlights {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    #highlights p {
+        font-size: 14px;
+    }
+
+
+    /* Why We Travel */
+
+    #why-we-travel {
+        padding: 50px 20px;
+    }
+
+    #why-we-travel h2 {
+        font-size: 32px;
+    }
+
+    #why-we-travel p {
+        font-size: 15px;
+    }
+
+
+    /* Contact */
+
+    #contact-us {
+        width: 92%;
+        padding: 60px 0;
+    }
+
+    #contact-us h1 {
+        font-size: 34px;
+    }
+
+    #contact-us > p {
+        font-size: 15px;
+    }
+
+
+    /* Contact Cards */
+
+    #emailCard,
+    #phoneCard,
+    #officeCard,
+    #hoursCard {
+        display: block;
+        width: 100%;
+        margin: 0 0 15px;
+        min-height: auto;
+        padding: 22px 18px;
+    }
+
+
+    /* Social Links */
+
+    #about-social-links {
+        margin-top: 35px;
+    }
+
+    #about-social-links a {
+        margin: 5px;
+        padding: 9px 15px;
+        font-size: 14px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 40px 20px 20px;
+        text-align: center;
+    }
+
+    #quick-links,
+    #social-links {
+        align-items: center;
+    }
+}
